@@ -1,0 +1,8 @@
+# Ignorer tout les fichiers et dossiers sauf...
+/*
+!/main.py
+!/train_model.py
+!/.gitignore
+!/requirements.txt
+!/intents.json
+!/README.md
