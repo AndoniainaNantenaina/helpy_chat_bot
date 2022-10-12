@@ -8,14 +8,14 @@
   <p align="center">
     A simple python chatbot project for simple use !
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="#doc_begin"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/AndoniainaNantenaina/helpy_chat_bot/">View Demo</a>
     ·
     <a href="https://github.com/AndoniainaNantenaina/helpy_chat_bot/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/AndoniainaNantenaina/helpy_chat_bot/issues">Request Feature</a>
   </p>
 </div>
 
@@ -36,6 +36,7 @@ The tools used for the implementation of this project are the following:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+﻿<a name="doc_begin"></a>
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -93,8 +94,6 @@ python -m venv venv
 
 (venv) python main.py
 ```
-
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
