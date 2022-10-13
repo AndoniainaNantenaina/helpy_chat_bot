@@ -7,7 +7,9 @@
                 "Hi", 
                 "Hey", 
                 "Is anyone there?", 
-                "Hello", "Hay"
+                "Hello", 
+                "Hay",
+                "Hola"
             ],
             "responses": [
                 "Hello", 
@@ -51,7 +53,7 @@
                 "Who you are?" 
             ],
             "responses": [
-                "I.m Helpy, your bot assistant", 
+                "I'm Helpy, your bot assistant", 
                 "I'm Helpy, an Artificial Intelligent bot"
             ]
         },

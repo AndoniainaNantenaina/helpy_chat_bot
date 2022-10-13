@@ -1,5 +1,7 @@
-# Ignorer tout les fichiers et dossiers sauf...
+# Ignorer tout ces fichiers et dossiers sauf...
 /*
+/*/__pycache__/
+!/helpy/
 !/main.py
 !/train_model.py
 !/.gitignore

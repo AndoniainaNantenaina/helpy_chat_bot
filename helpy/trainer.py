@@ -1,6 +1,7 @@
 # Importation des packages nécéssaires
 
-import json 
+import json
+import os 
 import numpy as np 
 import pickle
 from keras.models import Sequential
@@ -10,6 +11,12 @@ from keras_preprocessing.sequence import pad_sequences
 from sklearn.preprocessing import LabelEncoder
 
 def loadAndTrainModel(jsonFile : str):
+    """Fonction d'entrainement de modèle
+    
+    Parameters
+    ----------
+    `jsonFile` : Le fichier Json contenant les données à entrainer et à transformer en modèle 
+    """
     
     # Charger les données dans le fichier JSON dans data
     with open(jsonFile) as file:
@@ -92,15 +99,18 @@ def loadAndTrainModel(jsonFile : str):
         np.array(training_labels), 
         epochs=epochs)
 
+    if os.path.exists(".\\model\\"):
+        os.makedirs(".\\model\\")
+        
     # Sauvegarde du model déjà entrainé
-    model.save("chat_model")
+    model.save(".\\model\\chat_model.h5")
 
     # Enregistrement du tokenizer adapté/ajusté
-    with open('tokenizer.pickle', 'wb') as handle:
+    with open('.\\model\\tokenizer.pickle', 'wb') as handle:
         pickle.dump(tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
         
     # Enregistrement de l'encodeur d'étiquette adapté/ajusté
-    with open('label_encoder.pickle', 'wb') as ecn_file:
+    with open('.\\model\\label_encoder.pickle', 'wb') as ecn_file:
         pickle.dump(lbl_encoder, ecn_file, protocol=pickle.HIGHEST_PROTOCOL)    
         
     return
