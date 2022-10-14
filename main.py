@@ -16,7 +16,7 @@ if __name__ == "__main__":
         chat.chat()
     else:
         # Faire entrainer le modèle en utilisant les données contenus dans le fichier intents.json
-        trainer.loadAndTrainModel(jsonFile='intents.json')
+        trainer.loadAndTrainModel(jsonFile='.\\dataset\\bot\\intents.json')
         
         # Lancer le Chat
         print(Fore.YELLOW + "Start messaging with the bot (type quit to stop)!" + Style.RESET_ALL)

@@ -29,7 +29,7 @@ def chat():
         
         if user_input.lower() == "quit":
             break
-
+                
         # Appel de la méthode de prédiction
         result = model.predict(
             seq.pad_sequences(

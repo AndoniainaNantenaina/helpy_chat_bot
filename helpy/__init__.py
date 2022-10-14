@@ -10,6 +10,6 @@ voices = speech_engine.getProperty('voices')
 speech_engine.setProperty("voice", voices[1].id)
 
 # Charger le dataset
-with open("intents.json") as file:
+with open(".\\dataset\\bot\\intents.json") as file:
     data = json.load(file)
     

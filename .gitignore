@@ -2,6 +2,8 @@
 /*
 /*/__pycache__/
 !/helpy/
+!/image_recognition/
+!/dataset/
 !/main.py
 !/train_model.py
 !/.gitignore

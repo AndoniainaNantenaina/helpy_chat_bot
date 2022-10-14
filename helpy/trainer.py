@@ -99,7 +99,7 @@ def loadAndTrainModel(jsonFile : str):
         np.array(training_labels), 
         epochs=epochs)
 
-    if os.path.exists(".\\model\\"):
+    if not os.path.exists(".\\model\\"):
         os.makedirs(".\\model\\")
         
     # Sauvegarde du model déjà entrainé
